@@ -25,5 +25,5 @@ docker-compose exec backend ./bin/phpunit
 
 ## 4. API URL
 ```
-/api/v1/test
+/test
 ```
