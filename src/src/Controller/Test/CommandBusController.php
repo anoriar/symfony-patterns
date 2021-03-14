@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Controller\API;
+namespace App\Controller\Test;
 
 use App\CommandBus\Command\User\Create\CreateCommand;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -11,15 +11,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Class TestController
- * @package App\Controller\API
+ * @package App\Controller\Test
  *
- * @Route("/command-bus", name="api.command_bus")
+ * @Route(name="test.command_bus")
  */
-class CommandBusTestController
+class CommandBusController
 {
     /**
-     * @Route("/test", name=".test", methods={"GET"})
-     *
+     * @Route("/command-bus", methods={"GET"})
      * @param MessageBusInterface $messageBus
      *
      * @return JsonResponse
